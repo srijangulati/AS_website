@@ -1,0 +1,15 @@
+@import '../mixins';
+@import '../palette';
+
+
+$dark: (
+  'primary': (
+    'base': $p-gray,
+    'dark-base': $dark-charcoal,
+    'base-highlight': $light-silver,
+    'text':  $flash-white,
+    'text-highlight': $Argent,
+  )
+);
+
+@include define-theme($dark, 'dark');

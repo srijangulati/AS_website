@@ -1,0 +1,6 @@
+// Default color used in theme-color function
+$color-key: 'base' !default;
+
+@function theme-color($name: 'primary', $variant: $color-key) {
+  @return var(#{'--'}#{'color'}--#{$name}-#{$variant});
+}

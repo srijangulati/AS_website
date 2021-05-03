@@ -1,0 +1,11 @@
+@mixin define-theme($theme-list, $name: 'base') {
+  :root {
+    &.theme-#{$name} {
+      @each $type, $colors in $theme-list {
+        @each $variant, $color in $colors {
+          --#{'color'}--#{$type}-#{$variant}: #{$color};
+        }
+      }
+    }
+  }
+}

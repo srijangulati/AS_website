@@ -1,0 +1,20 @@
+@import './functions';
+
+body {
+  background: theme-color('primary', 'base');
+  color: theme-color('primary', 'text');
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid theme-color('primary', 'text');
+  color: 1px solid theme-color('primary', 'text');
+  font-size: 1.6rem;
+  outline: none;
+  padding: .3rem;
+
+  &:focus {
+    outline: none;
+  }
+}
